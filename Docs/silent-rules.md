@@ -91,7 +91,8 @@ cmd_cc_o_c = aarch64-linux-gnu-gcc -c -o $@ $<
 ```
 
 
-	在上述 makefile 中，调用 `$(call cmd,cc_o_c)` 后，`cmd` 的值变为：`cmd_cc_o_c`，正对应上述函数，从而获得执行对 C 的编译工作。接下来，从 `cmd` 的位置开始施展魔法：
+	在上述 makefile 中，
+	调用 `$(call cmd,cc_o_c)` 后，`cmd` 的值变为：`cmd_cc_o_c`，正对应上述函数，从而获得执行对 C 的编译工作。接下来，从 `cmd` 的位置开始施展魔法：
 
 
 ```makefile
